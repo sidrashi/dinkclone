@@ -20,7 +20,7 @@ import { PriceProvider } from "./context/PriceContext";
 import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
-import TnC from "./pages/tnc";
+import TnC from "./pages/TnC";
 import CRP from "./pages/CRP";
 
 function App() {
