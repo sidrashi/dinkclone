@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Phudu:wght@300..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --color-lightblue: #d0e7fa;
+    --color-background: #fff7ee;
+    --color-locationbg: #e8dd92;
+    --color-darkbrown: #321d1d;
+    --color-lightorange: #ffd2b0;
+    --color-darkyellow: #ffeb85;
+    --color-lightyellow: #fcf29f;
+    --color-greenbg: #bfe1b1;
+    --color-pricebggreen: #c6e5ba;
+    --color-pricebgyellow:#fef092;
+    --color-pricebgpink: #ffb3b2;
+    --color-orange: #ff816b;
+    --color-footer: #6873a1;
+    --color-red: #e81827;
+    --color-black: #000;
+    --color-white: #fff;
+    --font-custom: "Phudu", sans-seriff;
+    --font-ptag: "OpenSans", Arial, sans-seriff;
+    --animate-wiggle: wiggle 2s ease-in-out infinite;
+    --animate-marquee: marquee 20s linear infinite;
+
+    @keyframes wiggle {
+        0% {
+            transform: translateX(0);
+        }
+        25% {
+            transform: translateX(-5px);
+        }
+        50% {
+            transform: translateX(5px);
+        }
+        75% {
+            transform: translateX(-5px);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes marquee {
+        0% { transform: translateX(0%); }
+        100% { transform: translateX(-50%); }
+    }
+    
+    @keyframes slideIn {
+        from {
+          transform: translateY(-100px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+      
+}
+
+.animate-slideIn {
+    animation: slideIn 0.4s ease-out;
+  }
+
+.hide-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;    /* Firefox */
+  }
+  
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;            /* Chrome, Safari */
+  }
+
+  .no-calendar::-webkit-calendar-picker-indicator {
+    opacity: 0;            /* Hides the icon */
+    position: absolute;    /* Removes it from layout flow */
+    right: 0;
+    cursor: pointer;
+    height: 30%;
+    width: 80%;
+  }
+  
